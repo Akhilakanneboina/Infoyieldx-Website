@@ -29,6 +29,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
+  text-decoration: none;
 }
 
 .service-card:hover {
@@ -38,9 +39,14 @@
 .service-card h3 {
   color: #0b3d91;
   margin-bottom: 0.75rem;
+  text-decoration: none;
 }
 
 .service-card p {
   color: #444;
   font-size: 0.95rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,0 +1,70 @@
+.portfolio-detail {
+  padding: 3rem 2rem;
+  background-color: #f8faff;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.portfolio-detail h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #1b3b6f;
+  font-weight: bold;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+  font-size: 1.3rem;
+  color: #2b2f4c;
+  margin-bottom: 1rem;
+}
+
+.portfolio-image {
+  width: 80%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-item p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.contact-button {
+  background-color: #1b3b6f;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #2a70b8;
+}
