@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ChatBot from './components/Chatbot';
+
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -32,6 +34,7 @@ const App = () => (
             <Route path="/portfolio" element={<AllPortfolio />}/>
       </Routes>
     </main>
+    <ChatBot/>
     <Footer />
   </Router>
 );

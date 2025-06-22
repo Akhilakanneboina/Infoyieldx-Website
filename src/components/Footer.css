@@ -1,7 +1,9 @@
+/* Footer.css */
+
 .footer {
-  background-color: #0b3d91;
-  color: white;
-  padding: 2rem 1.2rem;
+  background-color: #001f3f; /* Dark navy */
+  color: #ffffff;
+  padding: 40px 20px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,63 +11,83 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 30px;
 }
 
 .footer-links {
-  text-align: left;
   flex: 1;
-  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 150px;
 }
 
 .footer-links a {
-  display: block;
-  color: white;
-  margin: 0.5rem 0;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #ffcc00;
+  color: #00bcd4; /* Light cyan */
 }
 
 .footer-map {
-  flex: 1;
-  min-width: 280px;
-}
-
-.footer-map iframe {
-  width: 100%;
-  height: 200px;
-  border: none;
-  border-radius: 10px;
-}
-
-.social-icons {
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #ffcc00;
+  flex: 2;
+  min-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid #ffffff33;
-  padding-top: 1rem;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   text-align: center;
-  font-size: 0.9rem;
-  margin-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-map {
+    width: 100%;
+  }
 }

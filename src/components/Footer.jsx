@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-map">
           <iframe
             title="InfoYieldX Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.432491167611!2d78.4866822748509!3d17.436889201147713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb976fa2b57fd9%3A0xd73c29b95e548842!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1718176962334!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.339946022832!2d77.74675087481316!3d11.309844488873134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9651d811f56cd%3A0xb21477d4c2eb3561!2sInfoyieldx!5e0!3m2!1sen!2sin!4v1750570188402!5m2!1sen!2sin"
             width="100%"
             height="200"
             style={{ border: 0 }}
@@ -43,10 +43,10 @@ const Footer = () => {
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/infoyieldx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/infoyieldx/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,5 @@
-// Contact.jsx
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Contact.css';
 
 const Contact = () => {
@@ -15,10 +15,17 @@ const Contact = () => {
     setFormData({...formData, [e.target.name]: e.target.value});
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can add form validation or send data to API here
-    setSubmitted(true);
+
+    try {
+      // Send form data to backend API
+      await axios.post('http://localhost:8080/api/hr/submit', formData);
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Error sending contact message:', error);
+      alert('Something went wrong. Please try again later.');
+    }
   };
 
   return (

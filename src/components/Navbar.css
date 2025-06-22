@@ -1,16 +1,13 @@
-/* Navbar.css */
-
+/* Base Styles */
 .navbar {
+  position: static;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
-  /* Navy blue background */
+  background-color: #fff;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: sticky;
-  top: 0;
   z-index: 1000;
 }
 
@@ -39,20 +36,49 @@
 
 .nav-links li a:hover,
 .nav-links li a:focus {
-  color: #ffcc00; /* A bright accent color on hover */
+  color: #ffcc00;
   outline: none;
 }
 
-/* Responsive: stack nav links on small screens */
+/* Hamburger icon styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
   .nav-links {
+    display: none;
     flex-direction: column;
     width: 100%;
+    background-color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .nav-links li {
