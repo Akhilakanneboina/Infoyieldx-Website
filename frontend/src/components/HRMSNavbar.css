@@ -1,0 +1,16 @@
+.hrms-navbar {
+  display: flex;
+  gap: 1rem;
+  background-color: #003366;
+  padding: 1rem;
+}
+
+.hrms-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hrms-navbar a.active {
+  text-decoration: underline;
+}
